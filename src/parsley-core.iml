@@ -12,7 +12,7 @@
           <sdk name="4.9.1 (AIR 3.6)" />
         </dependencies>
         <compiler-options>
-          <option name="additionalOptions" value="-load-config=/Users/mobitile/dev/spicefactory/parsley-core/build/flex-config.xml +project=/Users/mobitile/dev/spicefactory/parsley-core +version=3.0.0 +release=/Users/mobitile/dev/spicefactory/parsley-core/bin/release" />
+          <option name="additionalOptions" value="-load-config=/Users/mobitile/dev/rozdonmobile/parsley-core/build/flex-config.xml +project=/Users/mobitile/dev/rozdonmobile/parsley-core +version=3.0.0 +release=/Users/mobitile/dev/rozdonmobile/parsley-core/bin/release" />
         </compiler-options>
         <packaging-air-desktop />
         <packaging-android />
@@ -28,7 +28,7 @@
           <sdk name="4.9.1 (AIR 3.6)" />
         </dependencies>
         <compiler-options>
-          <option name="additionalOptions" value="-load-config=/Users/mobitile/dev/spicefactory/parsley-core/build/core-metadata.xml -load-config+=/Users/mobitile/dev/spicefactory/parsley-core/build/core-config.xml +project=/Users/mobitile/dev/spicefactory/parsley-core +version=3.0.0 +release=/Users/mobitile/dev/spicefactory/parsley-core/bin/release" />
+          <option name="additionalOptions" value="-load-config=/Users/mobitile/dev/rozdonmobile/parsley-core/build/core-metadata.xml -load-config+=/Users/mobitile/dev/rozdonmobile/parsley-core/build/core-config.xml +project=/Users/mobitile/dev/rozdonmobile/parsley-core +version=3.0.0 +release=/Users/mobitile/dev/rozdonmobile/parsley-core/bin/release" />
         </compiler-options>
         <packaging-air-desktop />
         <packaging-android />
@@ -44,7 +44,7 @@
           <sdk name="3.6.0" />
         </dependencies>
         <compiler-options>
-          <option name="additionalOptions" value="-load-config=/Users/mobitile/dev/spicefactory/parsley-core/build/xml-config.xml +project=/Users/mobitile/dev/spicefactory/parsley-core +version=3.0.0 +release=/Users/mobitile/dev/spicefactory/parsley-core/bin/release" />
+          <option name="additionalOptions" value="-load-config=/Users/mobitile/dev/rozdonmobile/parsley-core/build/xml-config.xml +project=/Users/mobitile/dev/rozdonmobile/parsley-core +version=3.0.0 +release=/Users/mobitile/dev/rozdonmobile/parsley-core/bin/release" />
         </compiler-options>
         <packaging-air-desktop />
         <packaging-android />
