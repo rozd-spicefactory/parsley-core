@@ -34,7 +34,7 @@
         <packaging-android />
         <packaging-ios />
       </configuration>
-      <configuration name="parsley-xml" pure-as="true" output-type="Library" output-file="parsley-xml.swc" output-folder="$MODULE_DIR$/../bin/release">
+      <configuration name="parsley-xml" pure-as="true" output-type="Library" output-file="parsley-xml-3.0.0.swc" output-folder="$MODULE_DIR$/../bin/release">
         <dependencies target-player="11.6">
           <entries>
             <entry module-name="parsley-core" build-configuration-name="parsley-core">

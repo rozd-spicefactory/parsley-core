@@ -18,8 +18,6 @@ package org.spicefactory.parsley.core.view {
 import org.spicefactory.lib.util.Flag;
 import org.spicefactory.parsley.core.registry.DynamicObjectDefinition;
 
-import flash.display.DisplayObject;
-
 /**
  * Represents the configuration for a single target in a view to get processed by the
  * nearest Context in the view hierarchy above.
@@ -41,7 +39,7 @@ public interface ViewConfiguration {
 	 * that should get added to the Context for the time the view it belongs to is on
 	 * the stage.
 	 */
-	function get view () : DisplayObject;
+	function get view() : Object;
 
 	/**
 	 * The processor to use for the target instance.

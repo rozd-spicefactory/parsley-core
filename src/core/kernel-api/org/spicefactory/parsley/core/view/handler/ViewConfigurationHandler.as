@@ -16,6 +16,9 @@
 
 package org.spicefactory.parsley.core.view.handler {
 
+import flash.display.DisplayObject;
+import flash.events.Event;
+
 import org.spicefactory.lib.logging.LogContext;
 import org.spicefactory.lib.logging.Logger;
 import org.spicefactory.lib.reflect.ClassInfo;
@@ -38,9 +41,6 @@ import org.spicefactory.parsley.core.view.lifecycle.CustomEventLifecycle;
 import org.spicefactory.parsley.core.view.metadata.Autoremove;
 import org.spicefactory.parsley.core.view.util.ContextAwareEventHandler;
 import org.spicefactory.parsley.core.view.util.ViewDefinitionLookup;
-
-import flash.display.DisplayObject;
-import flash.events.Event;
 
 /**
  * ViewRootHandler implementation that deals with bubbling events from components that explicitly
@@ -101,7 +101,8 @@ public class ViewConfigurationHandler implements ViewRootHandler {
 	/**
 	 * @inheritDoc
 	 */
-	public function addViewRoot (view:DisplayObject) : void {
+	public function addViewRoot(view:Object) :void
+    {
 		view.addEventListener(ViewConfigurationEvent.CONFIGURE_VIEW, handleExplicitEvent);
 		view.addEventListener(LEGACY_CONFIGURE_EVENT, handleExplicitEvent);
 		if (settings.autowireComponents) {
@@ -114,7 +115,8 @@ public class ViewConfigurationHandler implements ViewRootHandler {
 	/**
 	 * @inheritDoc
 	 */
-	public function removeViewRoot (view:DisplayObject) : void {
+	public function removeViewRoot(view:Object) :void
+    {
 		view.removeEventListener(ViewConfigurationEvent.CONFIGURE_VIEW, handleExplicitEvent);
 		view.removeEventListener(LEGACY_CONFIGURE_EVENT, handleExplicitEvent);
 		if (settings.autowireComponents) {

@@ -15,8 +15,6 @@
  */
 
 package org.spicefactory.parsley.core.view {
-import flash.display.DisplayObject;
-
 /**
  * Filter that can be used to select views that should be wired to the Context.
  * Autowiring views based on a filter is an alternative mechanism to explicitly
@@ -48,7 +46,7 @@ public interface ViewAutowireFilter {
 	 * @param object the view object to be filtered
 	 * @return true if the specified view object should be further processed.
 	 */
-	function prefilter (object:DisplayObject) : Boolean;
+	function prefilter(object:Object) : Boolean;
 	
 	/**
 	 * Makes the final decision whether a view object should be wired to the Context.
@@ -66,7 +64,7 @@ public interface ViewAutowireFilter {
 	 * @return an enumeration value that indicates how the framework should
 	 * deal with this view object
 	 */
-	function filter (object:DisplayObject) : ViewAutowireMode;
+	function filter(object:Object) : ViewAutowireMode;
 	
 }
 }

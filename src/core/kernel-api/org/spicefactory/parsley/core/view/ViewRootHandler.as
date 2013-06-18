@@ -17,9 +17,6 @@
 package org.spicefactory.parsley.core.view {
 import org.spicefactory.parsley.core.context.Context;
 
-
-import flash.display.DisplayObject;
-
 /**
  * A ViewRootHandler is responsible for dealing with one particular aspect of a ViewManager.
  * There are four default ViewRootHandler implementations automatically added to each ViewManager
@@ -54,7 +51,7 @@ public interface ViewRootHandler {
 	 * 
 	 * @param view the view root to add to the handler
 	 */
-	function addViewRoot (view:DisplayObject) : void;
+	function addViewRoot(view:Object) :void;
 
 	/**
 	 * Removes a view root from this handler.
@@ -63,7 +60,7 @@ public interface ViewRootHandler {
 	 * 
 	 * @param view the view root to remove from the handler
 	 */
-	function removeViewRoot (view:DisplayObject) : void;
+	function removeViewRoot(view:Object) :void;
 	
 	
 }

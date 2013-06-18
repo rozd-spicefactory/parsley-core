@@ -15,11 +15,10 @@
  */
 
 package org.spicefactory.parsley.core.view.impl {
-import org.spicefactory.parsley.core.view.ViewSettings;
-import org.spicefactory.parsley.core.view.ViewAutowireMode;
-
-import flash.display.DisplayObject;
 import flash.utils.getQualifiedClassName;
+
+import org.spicefactory.parsley.core.view.ViewAutowireMode;
+import org.spicefactory.parsley.core.view.ViewSettings;
 
 /**
  * Default implementation of the ViewAutowireFilter. The default behaviour is to exclude
@@ -46,14 +45,14 @@ public class DefaultViewAutowireFilter extends AbstractViewAutowireFilter {
 	/**
 	 * @inheritDoc
 	 */
-	public override function prefilter (object:DisplayObject) : Boolean {
+	public override function prefilter(object:Object) : Boolean {
 		return !excludedTypes.test(getQualifiedClassName(object));
 	}
 	
 	/**
 	 * @inheritDoc
 	 */
-	public override function filter (object:DisplayObject) : ViewAutowireMode {
+	public override function filter(object:Object) : ViewAutowireMode {
 		return ViewAutowireMode.CONFIGURED;
 	}
 	

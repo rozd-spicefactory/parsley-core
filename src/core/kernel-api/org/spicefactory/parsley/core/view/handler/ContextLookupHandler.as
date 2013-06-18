@@ -21,8 +21,6 @@ import org.spicefactory.parsley.core.events.ContextLookupEvent;
 import org.spicefactory.parsley.core.view.ViewRootHandler;
 import org.spicefactory.parsley.core.view.ViewSettings;
 
-import flash.display.DisplayObject;
-
 /**
  * ViewRootHandler implementation that deals with bubbling events from components 
  * that want to find out the nearest Context in the view hierarchy above them.
@@ -52,7 +50,8 @@ public class ContextLookupHandler implements ViewRootHandler {
 	/**
 	 * @inheritDoc
 	 */
-	public function addViewRoot (view:DisplayObject) : void {
+	public function addViewRoot(view:Object) :void
+    {
 		view.addEventListener(ContextLookupEvent.LOOKUP, handleLookup);
 		view.addEventListener(ContextConfigurationEvent.CONFIGURE_CONTEXT, contextCreated);
 	}
@@ -60,7 +59,8 @@ public class ContextLookupHandler implements ViewRootHandler {
 	/**
 	 * @inheritDoc
 	 */
-	public function removeViewRoot (view:DisplayObject) : void {
+	public function removeViewRoot(view:Object) :void
+    {
 		view.removeEventListener(ContextLookupEvent.LOOKUP, handleLookup);
 		view.removeEventListener(ContextConfigurationEvent.CONFIGURE_CONTEXT, contextCreated);
 	}

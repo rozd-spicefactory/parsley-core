@@ -15,14 +15,14 @@
  */
 
 package org.spicefactory.parsley.core.view.impl {
+import flash.display.DisplayObject;
+
 import org.spicefactory.lib.errors.IllegalStateError;
 import org.spicefactory.lib.util.Flag;
 import org.spicefactory.parsley.core.registry.DynamicObjectDefinition;
 import org.spicefactory.parsley.core.view.ViewConfiguration;
 import org.spicefactory.parsley.core.view.ViewLifecycle;
 import org.spicefactory.parsley.core.view.ViewProcessor;
-
-import flash.display.DisplayObject;
 
 /**
  * Default implementation of the ViewConfiguration interface.
@@ -39,7 +39,7 @@ public class DefaultViewConfiguration implements ViewConfiguration {
 	 * @param target the target to get processed by the Context
 	 * @param configId the configuration id to use to fetch matching definitions from the Context
 	 */
-	function DefaultViewConfiguration (view:DisplayObject, target:Object = null, configId:String = null) {
+	function DefaultViewConfiguration (view:Object, target:Object = null, configId:String = null) {
 		_view = view;
 		_target = target;
 		_configId = configId;
@@ -56,12 +56,12 @@ public class DefaultViewConfiguration implements ViewConfiguration {
 	}
 
 	
-	private var _view:DisplayObject;
+	private var _view:Object;
 	
 	/**
 	 * @inheritDoc
 	 */
-	public function get view () : DisplayObject {
+	public function get view() : Object {
 		return _view;
 	}
 

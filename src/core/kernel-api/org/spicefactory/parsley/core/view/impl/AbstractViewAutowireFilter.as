@@ -16,13 +16,12 @@
 
 package org.spicefactory.parsley.core.view.impl {
 
+import flash.events.Event;
+
 import org.spicefactory.lib.errors.AbstractMethodError;
 import org.spicefactory.parsley.core.view.ViewAutowireFilter;
 import org.spicefactory.parsley.core.view.ViewAutowireMode;
 import org.spicefactory.parsley.core.view.ViewSettings;
-
-import flash.display.DisplayObject;
-import flash.events.Event;
 
 /**
  * Abstract base implementation of the ViewAutowireFilter.
@@ -58,14 +57,14 @@ public class AbstractViewAutowireFilter implements ViewAutowireFilter {
 	/**
 	 * @inheritDoc
 	 */
-	public function prefilter (object:DisplayObject) : Boolean {
+	public function prefilter(object:Object) : Boolean {
 		throw new AbstractMethodError();
 	}
 	
 	/**
 	 * @inheritDoc
 	 */
-	public function filter (object:DisplayObject) : ViewAutowireMode {
+	public function filter(object:Object) : ViewAutowireMode {
 		throw new AbstractMethodError();
 	}
 	
