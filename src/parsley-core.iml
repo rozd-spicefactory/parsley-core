@@ -8,6 +8,9 @@
             <entry module-name="parsley-core" build-configuration-name="parsley-core">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="8733a388-635c-4456-a7e8-4fa431215c81">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="4.9.1 (AIR 3.6)" />
         </dependencies>
@@ -24,8 +27,23 @@
             <entry library-id="5a7ef27b-94fb-4563-a770-236aa590a176">
               <dependency linkage="Merged" />
             </entry>
+            <entry module-name="spicelib-util" build-configuration-name="spicelib-util">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="spicelib-logging" build-configuration-name="spicelib-logging">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="spicelib-xml-mapper" build-configuration-name="spicelib-xml-mapper">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="spicelib-reflect" build-configuration-name="spicelib-reflect">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="spicelib-commands" build-configuration-name="spicelib-commands">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
-          <sdk name="4.9.1 (AIR 3.6)" />
+          <sdk name="3.6.0" />
         </dependencies>
         <compiler-options>
           <option name="additionalOptions" value="-load-config=/Users/mobitile/dev/rozdonmobile/parsley-core/build/core-metadata.xml -load-config+=/Users/mobitile/dev/rozdonmobile/parsley-core/build/core-config.xml +project=/Users/mobitile/dev/rozdonmobile/parsley-core +version=3.0.0 +release=/Users/mobitile/dev/rozdonmobile/parsley-core/bin/release" />
@@ -38,6 +56,24 @@
         <dependencies target-player="11.6">
           <entries>
             <entry module-name="parsley-core" build-configuration-name="parsley-core">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="8196e8db-ee01-4e6d-ac47-68353ede8066">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="spicelib-commands" build-configuration-name="spicelib-commands">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="spicelib-xml-mapper" build-configuration-name="spicelib-xml-mapper">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="spicelib-util" build-configuration-name="spicelib-util">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="spicelib-reflect" build-configuration-name="spicelib-reflect">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="spicelib-logging" build-configuration-name="spicelib-logging">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -76,6 +112,33 @@
         <jarDirectory url="file://$MODULE_DIR$/../libs" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="8196e8db-ee01-4e6d-ac47-68353ede8066" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../libs" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="8733a388-635c-4456-a7e8-4fa431215c81" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../parsley-core/libs" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../parsley-core/libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="spicelib-util" exported="" />
+    <orderEntry type="module" module-name="spicelib-logging" exported="" />
+    <orderEntry type="module" module-name="spicelib-commands" exported="" />
+    <orderEntry type="module" module-name="spicelib-reflect" exported="" />
+    <orderEntry type="module" module-name="spicelib-xml-mapper" exported="" />
   </component>
 </module>
 
