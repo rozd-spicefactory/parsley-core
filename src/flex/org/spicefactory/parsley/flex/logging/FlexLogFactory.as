@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.spicefactory.lib.logging.flex {
+package org.spicefactory.parsley.flex.logging {
 import org.spicefactory.lib.logging.LogFactory;
 import org.spicefactory.lib.logging.LogUtil;
 import org.spicefactory.lib.logging.Logger;

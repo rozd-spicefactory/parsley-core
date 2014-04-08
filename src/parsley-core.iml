@@ -34,7 +34,7 @@
               <dependency linkage="Merged" />
             </entry>
             <entry module-name="spicelib-xml-mapper" build-configuration-name="spicelib-xml-mapper">
-              <dependency linkage="Merged" />
+              <dependency linkage="Include" />
             </entry>
             <entry module-name="spicelib-reflect" build-configuration-name="spicelib-reflect">
               <dependency linkage="Merged" />
