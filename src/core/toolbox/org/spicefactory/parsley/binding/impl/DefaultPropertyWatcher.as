@@ -15,10 +15,8 @@
  */
 package org.spicefactory.parsley.binding.impl {
 
-import flash.events.Event;
-import flash.events.IEventDispatcher;
-import org.spicefactory.parsley.binding.PropertyWatcher;
 import org.spicefactory.lib.reflect.Property;
+import org.spicefactory.parsley.binding.PropertyWatcher;
 
 /**
  * Default implementation of the PropertyWatcher interface.
@@ -30,7 +28,7 @@ import org.spicefactory.lib.reflect.Property;
 public class DefaultPropertyWatcher implements PropertyWatcher {
 
 
-	private var target: IEventDispatcher;
+	private var target: Object;
 	private var property: Property;
 	private var changeEvent: String;
 	private var callback: Function;
@@ -40,7 +38,7 @@ public class DefaultPropertyWatcher implements PropertyWatcher {
 	 * @inheritDoc
 	 */
 	public function watch (target: Object, property: Property, changeEvent: String, callback: Function): void {
-		this.target = IEventDispatcher(target);
+		this.target = target;
 		this.property = property;
 		this.changeEvent = changeEvent;
 		this.callback = callback;
@@ -48,7 +46,7 @@ public class DefaultPropertyWatcher implements PropertyWatcher {
 		target.addEventListener(changeEvent, propertyChanged);
 	}
 	
-	private function propertyChanged (event: Event): void {
+	private function propertyChanged (event: Object): void {
 		callback(property.getValue(target));
 	}
 
