@@ -3,7 +3,7 @@
   <component name="FlexBuildConfigurationManager" active="parsley-core">
     <configurations>
       <configuration name="parsley-flex" output-type="Library" output-file="parsley-flex-3.0.0.swc" output-folder="$MODULE_DIR$/../bin/release">
-        <dependencies target-player="11.6">
+        <dependencies target-player="15.0">
           <entries>
             <entry module-name="parsley-core" build-configuration-name="parsley-core">
               <dependency linkage="Merged" />
@@ -12,7 +12,7 @@
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="4.9.1 (AIR 3.6)" />
+          <sdk name="4.13.0" />
         </dependencies>
         <compiler-options>
           <option name="additionalOptions" value="-load-config=/Users/mobitile/dev/rozdonmobile/parsley-core/build/flex-config.xml +project=/Users/mobitile/dev/rozdonmobile/parsley-core +version=3.0.0 +release=/Users/mobitile/dev/rozdonmobile/parsley-core/bin/release" />
@@ -22,7 +22,7 @@
         <packaging-ios />
       </configuration>
       <configuration name="parsley-core" pure-as="true" output-type="Library" output-file="parsley-core-3.0.0.swc" output-folder="$MODULE_DIR$/../bin/release">
-        <dependencies target-player="11.6">
+        <dependencies target-player="18.0">
           <entries>
             <entry library-id="5a7ef27b-94fb-4563-a770-236aa590a176">
               <dependency linkage="Merged" />
@@ -43,7 +43,7 @@
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="3.6.0" />
+          <sdk name="18.0.0.180" />
         </dependencies>
         <compiler-options>
           <option name="additionalOptions" value="-load-config=/Users/mobitile/dev/rozdonmobile/parsley-core/build/core-metadata.xml -load-config+=/Users/mobitile/dev/rozdonmobile/parsley-core/build/core-config.xml +project=/Users/mobitile/dev/rozdonmobile/parsley-core +version=3.0.0 +release=/Users/mobitile/dev/rozdonmobile/parsley-core/bin/release" />
@@ -53,7 +53,7 @@
         <packaging-ios />
       </configuration>
       <configuration name="parsley-xml" pure-as="true" output-type="Library" output-file="parsley-xml-3.0.0.swc" output-folder="$MODULE_DIR$/../bin/release">
-        <dependencies target-player="11.6">
+        <dependencies target-player="18.0">
           <entries>
             <entry module-name="parsley-core" build-configuration-name="parsley-core">
               <dependency linkage="Merged" />
@@ -77,7 +77,7 @@
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="3.6.0" />
+          <sdk name="18.0.0.180" />
         </dependencies>
         <compiler-options>
           <option name="additionalOptions" value="-load-config=/Users/mobitile/dev/rozdonmobile/parsley-core/build/xml-config.xml +project=/Users/mobitile/dev/rozdonmobile/parsley-core +version=3.0.0 +release=/Users/mobitile/dev/rozdonmobile/parsley-core/bin/release" />
@@ -98,7 +98,7 @@
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/xml" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="3.6.0&#9;4.9.1 (AIR 3.6)" jdkType="__CompositeFlexSdk__" />
+    <orderEntry type="jdk" jdkName="4.13.0&#9;18.0.0.180" jdkType="__CompositeFlexSdk__" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="libs" level="project" />
     <orderEntry type="module-library" exported="">
@@ -141,4 +141,3 @@
     <orderEntry type="module" module-name="spicelib-xml-mapper" exported="" />
   </component>
 </module>
-
