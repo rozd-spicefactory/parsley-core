@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 package org.spicefactory.parsley.command {
-	
+import org.spicefactory.lib.command.group.CommandSequence;
+import org.spicefactory.lib.command.group.ParallelCommands;
+
 /**
  * API for mapping commands to messages programmatically.
  * 
@@ -43,8 +45,22 @@ public class MappedCommands {
 	public static function factoryFunction (factory:Function, type:Class) : MappedCommandBuilder {
 		return MappedCommandBuilder.forFactoryFunction(factory, type);
 	}
-	
-	
+
+    public static function sequence():MapCommandBuilder
+    {
+        return new MapCommandBuilder(CommandSequence);
+    }
+
+    public static function parallel():MapCommandBuilder
+    {
+        return new MapCommandBuilder(ParallelCommands);
+    }
+
+    public static function map():MapCommandBuilder
+    {
+        return new MapCommandBuilder();
+    }
+
 }
 }
 
