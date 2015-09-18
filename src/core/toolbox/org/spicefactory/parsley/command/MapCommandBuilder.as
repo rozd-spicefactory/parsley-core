@@ -19,7 +19,7 @@ public class MapCommandBuilder
     {
         super();
 
-        _groupType = null;
+        _groupType = groupType;
     }
 
     //--------------------------------------------------------------------------
