@@ -9,7 +9,7 @@
     	</source-path>
     	
 		<external-library-path>
-			<path-element>${flexlib}/libs/player/20.0/playerglobal.swc</path-element>
+			<path-element>${flexlib}/libs/player/32.0/playerglobal.swc</path-element>
 			<!--<path-element>${flexlib}/libs/flex.swc</path-element>-->
 			<!--<path-element>${flexlib}/libs/framework.swc</path-element>-->
 
